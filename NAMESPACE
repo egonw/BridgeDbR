@@ -1,0 +1,14 @@
+import("rJava")
+importFrom("RCurl","curlPerform", "basicTextGatherer")
+export(
+ getSystemCode,
+ getOrganismCode,
+ getBridgeNames,
+ getDatabase,
+ getMatchingSources,
+ getFullName,
+ getDataSource,
+ loadDatabase,
+ map
+)
+
