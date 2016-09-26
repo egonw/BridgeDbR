@@ -1,3 +1,51 @@
+CHANGES IN VERSION 1.3.3
+------------------------
+
+BUG FIXED
+
+    o fixed returning of GO mappings (Lars Eijssen)
+
+CHANGES IN VERSION 1.3.2
+------------------------
+
+BUG FIXED
+
+    o fixed the getting for BridgeDb database names for recent download server
+      updates
+    o added better documentation for loadDatabase()
+
+CHANGES IN VERSION 1.3.1
+------------------------
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Depend on R 3.2
+
+
+CHANGES IN VERSION 1.3.0
+------------------------
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o getOrganismCode() now throws an error when the given species was not found
+    o map() can now also return all possible mappings
+    o getBridgeNames() now also supports other locations and custom file name
+      patterns
+
+NEW FEATURES
+
+    o adds unit testing (with testthat)
+    o updated vignette for new user-visible changes
+    o updated the BridgeDb libraries to version 2.1.0
+
+BUG FIXES
+
+    o added license infromation for Java libraries (Apache Derby and BridgeDb)
+    o fixed a wrong descriptiong in the documentation of loadDatabse()
+    o download of BridgeDb identifier mappings files is now forces as binary
+      fixing the downloading on MS-Windows platforms
+    o source code line length according to Bioconductor
+
 CHANGES IN VERSION 0.99.1
 -----------------------
 

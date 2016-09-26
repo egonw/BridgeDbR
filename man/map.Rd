@@ -13,17 +13,16 @@ map(mapper, source, identifier, target)
  \item{mapper}{loaded BridgeDb identifier mapper}
  \item{source}{system code of the data source}
  \item{identifier}{identifier to be converted}
- \item{target}{system code of the target data source}
+ \item{target}{system code of the target data source (optional)}
 }
 \value{
  \item{mappings}{a vector of mapped identifiers for the target data source}
 }
 \examples{
-\dontrun{
-location <- getDatabase("Homo sapiens")
+location <- getDatabase("Mycobacterium tuberculosis")
 mapper <- loadDatabase(location)
-map(mapper, "L", "196410", "X")
-}
+map(mapper, "L", "885041", "X")
+map(mapper, "L", "885041")
 }
 \author{
 Egon Willighagen

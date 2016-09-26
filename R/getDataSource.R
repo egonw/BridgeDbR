@@ -4,13 +4,13 @@ getDataSource <- function(name=NA, code=NA){
     datasource <- .jcall(
      "org/bridgedb/DataSource",
      "Lorg/bridgedb/DataSource;",
-     "getByFullName",name
+     "getExistingByFullName",name
     )
   } else if (!is.na(code)) {
     datasource <- .jcall(
      "org/bridgedb/DataSource",
      "Lorg/bridgedb/DataSource;",
-     "getBySystemCode",code
+     "getExistingBySystemCode",code
     )
   } else {
     stop("You must provide either a name or a system code")

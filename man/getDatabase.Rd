@@ -13,12 +13,14 @@ getDatabase(organism,location)
 }
 \arguments{
  \item{organism}{the organism name}
- \item{location}{optional parameter to indicate where the database should be saved}
+ \item{location}{optional parameter to indicate where the database should be
+                 saved}
 }
 \value{
  \item{location}{the location where the database was saved}
 }
 \examples{
+location <- getDatabase("Mycobacterium tuberculosis")
 \dontrun{location <- getDatabase("Homo sapiens")}
 }
 \author{

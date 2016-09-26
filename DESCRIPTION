@@ -3,13 +3,15 @@ Type: Package
 Title: Code for using BridgeDb identifier mapping framework from within
         R
 Version: 1.7.0
-Date: 2014-03-16
+Date: 2016-04-27
 Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen
         <egon.willighagen@gmail.com>, Anwesha Bohler
-        <anweshabohler@gmail.com>
+        <anweshabohler@gmail.com>, Lars Eijssen
+        <l.eijssen@maastrichtuniversity.nl>
 Maintainer: Anwesha Bohler <anweshabohler@gmail.com>
-Depends: R (>= 2.0.0), rJava
+Depends: R (>= 3.2.0), rJava
 Imports: RCurl
+Suggests: testthat
 Description: Use BridgeDb functions and load identifier mapping
         databases in R
 biocViews: Software, Annotation

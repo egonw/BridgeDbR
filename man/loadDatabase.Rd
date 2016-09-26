@@ -1,10 +1,16 @@
 \name{loadDatabase}
 \alias{loadDatabase}
 \title{
-Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper object.
+Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper
+Java-Object.
 }
 \description{
-Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper object.
+Loads a BridgeDb identifier mapping database (.bridge file) as an IDMapper
+Java-Object.
+}
+\details{The return Java-Object is a Java class implementing the BridgeDb
+IDMapper interface. It is the required mapper class that is used as input
+for other methods that need an IDMapper.
 }
 \usage{
 loadDatabase(location)
@@ -13,13 +19,11 @@ loadDatabase(location)
  \item{location}{location on the hard disk of the BridgeDb file}
 }
 \value{
- \item{mapper}{the system code of the data source}
+ \item{mapper}{an IDMapper object}
 }
 \examples{
-\dontrun{
-location <- getDatabase("Homo sapiens")
+location <- getDatabase("Mycobacterium tuberculosis")
 mapper <- loadDatabase(location)
-}
 }
 \author{
 Egon Willighagen

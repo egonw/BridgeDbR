@@ -4,7 +4,8 @@
 Return the name of a particular data source.
 }
 \description{
-Data sources are defined by a title and a short system code. This method converts a system code into a full name.
+Data sources are defined by a title and a short system code. This method
+converts a system code into a full name.
 }
 \usage{
 getFullName(syscode)

@@ -1,11 +1,12 @@
 \name{getMatchingSources}
 \alias{getMatchingSources}
 \title{
-Return a list of data sources of which the identifier pattern matches the identifier given.
+Return a list of data sources of which the identifier pattern matches the
+identifier given.
 }
 \description{
-This method runs through all data sources it knows about, and looks for sources of
-which the identifier pattern matches the given identifier.
+This method runs through all data sources it knows about, and looks for sources
+of which the identifier pattern matches the given identifier.
 }
 \usage{
 getMatchingSources(identifier)

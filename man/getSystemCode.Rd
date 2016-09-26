@@ -4,7 +4,8 @@
 Return the system code of a particular data source.
 }
 \description{
-Data sources are defined by a title and a short system code. This method converts a name into a system code.
+Data sources are defined by a title and a short system code. This method
+converts a name into a system code.
 }
 \usage{
 getSystemCode(name)

@@ -4,11 +4,11 @@ require(rJava, quietly=TRUE)
 
 .onLoad <- function(lib, pkg) {
     dlp<-Sys.getenv("DYLD_LIBRARY_PATH")
-if (Sys.info()['sysname'] == "Darwin") 
-{
-    Sys.setenv("DYLD_LIBRARY_PATH"=sub("/usr/X11R6/lib","",dlp))
-}
-   libJars = c(
+    if (Sys.info()['sysname'] == "Darwin") 
+    {
+        Sys.setenv("DYLD_LIBRARY_PATH"=sub("/usr/X11R6/lib","",dlp))
+    }
+    libJars = c(
         "org.bridgedb.jar",
         "org.bridgedb.bio.jar",
         "org.bridgedb.rdb.jar",
@@ -16,5 +16,5 @@ if (Sys.info()['sysname'] == "Darwin")
     	)
     .jpackage(pkg, jars=libJars)
 #make sure the biodatasources are instantiated
-.jcall("org/bridgedb/bio/BioDataSource","V","init")
+.jcall("org/bridgedb/bio/DataSourceTxt","V","init")
 }
