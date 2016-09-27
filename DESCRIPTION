@@ -8,7 +8,7 @@ Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen
         <egon.willighagen@gmail.com>, Anwesha Bohler
         <anweshabohler@gmail.com>, Lars Eijssen
         <l.eijssen@maastrichtuniversity.nl>
-Maintainer: Anwesha Bohler <anweshabohler@gmail.com>
+Maintainer: Egon Willighagen <egon.willighagen@gmail.com>
 Depends: R (>= 3.3.0), rJava
 Imports: RCurl
 Suggests: testthat
