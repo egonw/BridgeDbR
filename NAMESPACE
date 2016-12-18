@@ -8,7 +8,10 @@ export(
  getMatchingSources,
  getFullName,
  getDataSource,
+ registerDataSource,
  loadDatabase,
- map
+ map,
+ fullNameExists,
+ systemCoudeExists
 )
 

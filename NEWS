@@ -1,3 +1,12 @@
+CHANGED IN VERSION 1.9.1
+------------------------
+
+NEW FEATURES
+
+    o adds a method to register a new DataSource
+    o adds methods to see if a DataSource exists, based
+      on the full name and system code
+
 CHANGED IN VERSION 1.7.2
 ------------------------
 
