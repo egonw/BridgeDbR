@@ -3,7 +3,7 @@ getBridgeNames <- function(
 ) {
     if (missing(code)) code = "\\w{2}"
     if (missing(pattern))
-        pattern = paste(code,"_Derby_\\w+.bridge",sep="")
+        pattern = paste(code,"_Derby_Ensembl_\\w+.bridge",sep="")
     site = basicTextGatherer()
     curlPerform(url=website, writefunction=site$update)
     patternInternal = paste(">", pattern, "<",sep="") # require a trailing tag

@@ -8,6 +8,10 @@ download site.
 This method returns a list of file names of BridgeDb identifier mapping files
 as they are available from the mapping file download site. The optional code
 parameter can be used to restrict the list to a specific organism.
+
+Occassionally, the ID mapping file download website changes the pattern of the
+file names. In that case, you can provide an alternative filename pattern to
+recognize files on the download site.
 }
 \usage{
 getBridgeNames(code, website, pattern)
