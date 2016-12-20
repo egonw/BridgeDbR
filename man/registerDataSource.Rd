@@ -8,7 +8,7 @@ Return a DataSource of the newly registered data source, based on either a name
 or system code.
 }
 \usage{
-newDataSource = registertDataSource(code,name)
+registerDataSource(code,name)
 }
 \arguments{
  \item{code}{the system code of the data source}
@@ -18,7 +18,7 @@ newDataSource = registertDataSource(code,name)
  \item{dataSource}{a DataSource Java object}
 }
 \examples{
-newDataSource <- registertDataSource(code="Cks", name-"KnAPSaCK")
+newDataSource <- registerDataSource(code="Cks", name="KnAPSaCK")
 }
 \author{
 Egon Willighagen

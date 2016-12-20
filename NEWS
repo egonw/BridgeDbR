@@ -1,4 +1,4 @@
-CHANGED IN VERSION 1.9.1
+CHANGED IN VERSION 1.9.3
 ------------------------
 
 NEW FEATURES
@@ -6,6 +6,10 @@ NEW FEATURES
     o adds a method to register a new DataSource
     o adds methods to see if a DataSource exists, based
       on the full name and system code
+
+BUG FIXES
+
+    o Updated file pattern for getBridgeNames()
 
 CHANGED IN VERSION 1.7.2
 ------------------------
