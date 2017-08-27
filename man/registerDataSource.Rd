@@ -18,7 +18,7 @@ registerDataSource(code,name)
  \item{dataSource}{a DataSource Java object}
 }
 \examples{
-newDataSource <- registerDataSource(code="Cks", name="KnAPSaCK")
+newDataSource <- registerDataSource(code="Cks", name="KNApSAcK")
 }
 \author{
 Egon Willighagen
