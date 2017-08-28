@@ -1,11 +1,21 @@
+CHANGED IN VERSION 1.10.2
+-------------------------
+
+BUG FIXES
+
+    o Fixed the NEWS for 1.10.1
+
 CHANGED IN VERSION 1.10.1
 -------------------------
 
 NEW FEATURES
 
-    o Updated to BridgeDb 2.2.0
-    o More tests
+    o More unit tests
 
+BUG FIXES
+
+    o Updated to BridgeDb 2.2.0: fixes loading of mapping
+      files with new data sources
 
 CHANGED IN VERSION 1.9.3
 ------------------------
