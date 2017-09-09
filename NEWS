@@ -1,3 +1,11 @@
+CHANGED IN VERSION 1.11.4
+-------------------------
+
+BUG FIXES
+
+    o Updated to BridgeDb 2.2.2: fixes recognition of new
+      HMDB identifiers (closes #1)
+
 CHANGED IN VERSION 1.10.2
 -------------------------
 
