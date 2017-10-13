@@ -8,6 +8,17 @@ Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen
         <egon.willighagen@gmail.com>, Anwesha Bohler
         <anweshabohler@gmail.com>, Lars Eijssen
         <l.eijssen@maastrichtuniversity.nl>
+Authors@R: c(person("Chris", "Leemans", role = c("aut"),
+                     email = "christleemans@gmail.com"),
+             person("Egon", "Willighagen", role = c("aut","cre"),
+                     email = "egon.willighagen@gmail.com",
+                     comment = c(ORCID = "0000-0001-7542-0286")),
+             person("Anwesha", "Bohler", role = "aut",
+                     email = "anweshabohler@gmail.com"),
+             person("Lars", "Eijssen", role = "aut",
+                     email = "l.eijssen@maastrichtuniversity.nl",
+                     comment = c(ORCID = "0000-0002-6473-2839"))
+           )
 Maintainer: Egon Willighagen <egon.willighagen@gmail.com>
 Depends: R (>= 3.3.0), rJava
 Imports: RCurl
