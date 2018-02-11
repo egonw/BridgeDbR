@@ -7,7 +7,7 @@
 
 % \VignetteIndexEntry{tutorial}
 
-\title{An R package with BridgeDb for identifier mapping}
+\title{Using the BridgeDbR package for identifier mapping}
 \author{
   Egon Willighagen
 }
@@ -98,6 +98,15 @@ dbLocation <- getDatabase("Rattus norvegicus",location=getwd())
 
 The dbLocation variable then contains the location of the identifier mapping file that was
 downloaded.
+
+Mapping databases can also be manually downloaded for genes, metabolites, and gene variants
+from the following locations:
+
+\begin{itemize}
+\item Genes, Transcripts, and Proteins: \url{http://bridgedb.org/data/gene_database/}
+\item Metabolites: \url{http://bridgedb.org/data/gene_database/}
+\item Gene Variants: \url{http://bridgedb.org/data/variant/}
+\end{itemize}
 
 \subsection{Loading Databases}
 
