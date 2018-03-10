@@ -2,7 +2,7 @@ Package: BridgeDbR
 Type: Package
 Title: Code for using BridgeDb identifier mapping framework from within
         R
-Version: 1.13.3
+Version: 1.13.4
 Date: 2018-03-10
 Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen
         <egon.willighagen@gmail.com>, Anwesha Bohler
@@ -22,7 +22,8 @@ Authors@R: c(person("Chris", "Leemans", role = c("aut"),
 Maintainer: Egon Willighagen <egon.willighagen@gmail.com>
 Depends: R (>= 3.3.0), rJava
 Imports: RCurl
-Suggests: testthat
+VignetteBuilder: knitr
+Suggests: BiocStyle, knitr, rmarkdown, testthat
 Description: Use BridgeDb functions and load identifier mapping
         databases in R.
 biocViews: Software, Annotation

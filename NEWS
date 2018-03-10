@@ -1,4 +1,19 @@
+CHANGED IN VERSION 1.13.4
+-------------------------
+
+NEW FEATURES
+
+    o Converted the vignette to RMarkdown
+
+CHANGED IN VERSION 1.13.3
+-------------------------
+
+BUG FIXES
+
+    o Fixed the URLs for GitHub and the issue tracker
+
 CHANGED IN VERSION 1.13.2
+-------------------------
 
 NEW FEATURES
 
