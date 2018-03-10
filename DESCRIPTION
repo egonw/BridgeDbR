@@ -26,7 +26,7 @@ VignetteBuilder: knitr
 Suggests: BiocStyle, knitr, rmarkdown, testthat
 Description: Use BridgeDb functions and load identifier mapping
         databases in R.
-biocViews: Software, Annotation
+biocViews: Software, Annotation, Metabolomics, Cheminformatics
 License: AGPL-3
 LazyLoad: yes
 URL: https://github.com/bridgedb/BridgeDbR
