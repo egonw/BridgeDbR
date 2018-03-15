@@ -1,23 +1,30 @@
 ---
-title: "Tutorial"
+title: "BridgeDbR Tutorial"
 author: "Egon Willighagen"
 package: BridgeDbR
 output: 
-  BiocStyle::html_document
+  BiocStyle::html_document:
+    toc_float: true
 vignette: >
   %\VignetteIndexEntry{Tutorial}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}  
+bibliography: tutorial.bib
+csl: biomed-central.csl
+references:
+- id: dummy
+  title: no title
+  author:
+  - family: noname
+    given: noname
 ---
 
 # Introduction
 
 [BridgeDb](https://github.com/bridgedb/BridgeDb) is a combination of an application programming interface (API), library, and set of data files
-for mapping identifiers for identical objects (doi:[10.1186/1471-2105-11-5](https://doi.org/10.1186/1471-2105-11-5)}. Because BridgeDb is
-use by projects in bioinformatics, like [WikiPathways](http://wikipathways.org/)
-(doi:[10.1371/journal.pbio.0060184](https://doi.org/10.1371/journal.pbio.0060184)) and
-[PathVisio](http://pathvisio.org/)
-(doi:[10.1186/1471-2105-9-399](https://doi.org/10.1186/1471-2105-9-399)),
+for mapping identifiers for identical objects [@VanIersel2010]. Because BridgeDb is
+use by projects in bioinformatics, like [WikiPathways](http://wikipathways.org/) [@Pico2008] and
+[PathVisio](http://pathvisio.org/) [@VanIersel2008],
 identifier mapping databases are available for gene products and metabolites.
 
 Questions can be directed to the [BridgeDb Google Group](https://groups.google.com/forum/#!forum/bridgedb-discuss).
@@ -128,3 +135,4 @@ map(mapper, "L", "196410", "X")
 
 Mind you, this returns more than one identifier, as BridgeDb is generally a one to many mapping database.
 
+# References
