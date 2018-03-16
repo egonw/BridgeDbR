@@ -135,4 +135,31 @@ map(mapper, "L", "196410", "X")
 
 Mind you, this returns more than one identifier, as BridgeDb is generally a one to many mapping database.
 
+# Metabolomics
+
+While you can download the gene and protein identifier mapping databases with the *getDatabase()* method,
+this mapping database cannot be used for metabolites. The mapping database for metabolites will have to
+be downloaded manually from Figshare, e.g. the
+[February 2018 release](https://figshare.com/articles/Metabolite_BridgeDb_ID_Mapping_Database_20180201_/5845134)
+version. This page will allow you to download the *.bridge* file with the mappings.
+
+If reproducibility is important to you, you can download the file with (mind you, these files are
+quite large):
+
+```{r, eval=FALSE}
+file <- "metabolites_20180201.bridge"
+download.file(
+  "https://ndownloader.figshare.com/files/10358973",
+  location
+)
+location = normalizePath(file)
+mapper <- loadDatabase(location)
+```
+
+With this mapper you can then map metabolite identifiers:
+
+```{r}
+map(mapper, "456", source="Cs", target="Ck")
+```
+
 # References

@@ -4,6 +4,7 @@ CHANGED IN VERSION 1.13.6
 NEW FEATURES
 
     o Uses BibTeX again (in the RMarkdown tutorial)
+    o Added a section on metabolomics to the tutorial
 
 CHANGED IN VERSION 1.13.5
 -------------------------
