@@ -187,7 +187,7 @@ mapper <- loadDatabase(location)
 
 With this mapper you can then map metabolite identifiers:
 
-```{r}
+```{r, eval=FALSE}
 map(mapper, "456", source="Cs", target="Ck")
 ```
 
