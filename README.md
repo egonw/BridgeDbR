@@ -8,7 +8,7 @@ Van Iersel, M.;  Pico, A.;  Kelder, T.;  Gao, J.;  Ho, I.;   Hanspers, K.;  Conk
 
 The DOI of this package is https://doi.org/10.18129/B9.bioc.BridgeDbR
 
-The source code of this package is available from https://github.com/BiGCAT-UM/BridgeDbR
+The source code of this package is available from https://github.com/bridgedb/BridgeDbR
 
 License: AGPL-3
 
@@ -16,12 +16,16 @@ Available from Bioconductor
 ===========================
 To install this package, start R and enter:
 
-    source("http://bioconductor.org/biocLite.R")
-    biocLite("BridgeDbR")
+```
+install.packages("BiocManager")
+BiocManager::install("BridgeDbR")
+```
 
 To view documentation for the version of this package installed in your system, start R and enter:
 
-    browseVignettes("BridgeDbR")
+```
+browseVignettes("BridgeDbR")
+```
 
 http://www.bioconductor.org/packages/release/bioc/html/BridgeDbR.html
  
