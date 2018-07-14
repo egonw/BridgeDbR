@@ -3,6 +3,14 @@ CHANGED IN VERSION 1.15.1
 
 NEW FEATURES
 
+    o README now uses BiocManager for instructions how to install the package
+
+
+CHANGED IN VERSION 1.15.1
+-------------------------
+
+NEW FEATURES
+
     o Updated to BridgeDb 2.3.0
 
 CHANGED IN VERSION 1.13.6
