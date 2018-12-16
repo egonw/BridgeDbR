@@ -1,7 +1,7 @@
-getDatabase <- function(organism,location=NA) {
+getDatabase <- function(organism,location=NA,website="https://www.bridgedb.org/data/gene_database/") {
  if(is.na(location)) location = tempdir();
  code = getOrganismCode(organism)
- names = getBridgeNames(code)
+ names = getBridgeNames(code,website=website)
  dates = c()
  i = 1
  for (name in names) {
@@ -18,7 +18,7 @@ getDatabase <- function(organism,location=NA) {
   }
   j = j+1
  }
- url = paste("http://bridgedb.org/data/gene_database/",names[c],sep="")
+ url = paste(website,names[c],sep="")
  file = paste(location,"/",name,sep="")
  download.file(url,file, mode="wb")
  file

@@ -1,3 +1,15 @@
+CHANGED IN VERSION 1.17.1
+-------------------------
+
+NEW FEATURES
+
+    o server location for getDatabase() can now be configured with the website
+      parameter
+
+BUG FIXES
+
+    o Fixed the default database download server URL (now uses https)
+
 CHANGED IN VERSION 1.15.1
 -------------------------
 

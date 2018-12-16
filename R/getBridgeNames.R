@@ -1,5 +1,5 @@
 getBridgeNames <- function(
-    code, website="http://bridgedb.org/data/gene_database/", pattern
+    code, website="https://www.bridgedb.org/data/gene_database/", pattern
 ) {
     if (missing(code)) code = "\\w{2}"
     if (missing(pattern))
