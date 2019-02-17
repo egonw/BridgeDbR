@@ -1,3 +1,11 @@
+CHANGED IN VERSION 1.17.2
+-------------------------
+
+NEW FEATURES
+
+    o added getAttributes() that returns the attributes (properties) for the
+      given identifier
+
 CHANGED IN VERSION 1.17.1
 -------------------------
 

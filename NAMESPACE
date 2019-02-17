@@ -9,6 +9,7 @@ export(
  getMatchingSources,
  getFullName,
  getDataSource,
+ getAttributes,
  registerDataSource,
  loadDatabase,
  map,
