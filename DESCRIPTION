@@ -30,4 +30,4 @@ biocViews: Software, Annotation, Metabolomics, Cheminformatics
 License: AGPL-3
 LazyLoad: yes
 URL: https://github.com/bridgedb/BridgeDbR
-BugReports: https://github.com/egonw/BridgeDbR/issues
+BugReports: https://github.com/bridgedb/BridgeDbR/issues
