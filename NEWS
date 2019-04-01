@@ -1,3 +1,11 @@
+CHANGED IN VERSION 1.17.3
+-------------------------
+
+NEW FEATURES
+
+    o added an attempt to have BioSchemas annotation in the vignette
+    o now points to the issue tracker of the new GitHub code repository
+
 CHANGED IN VERSION 1.17.2
 -------------------------
 

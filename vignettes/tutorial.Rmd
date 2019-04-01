@@ -5,6 +5,8 @@ package: BridgeDbR
 output: 
   BiocStyle::html_document:
     toc_float: true
+    includes:
+      in_header: bioschemas.html
 vignette: >
   %\VignetteIndexEntry{Tutorial}
   %\VignetteEngine{knitr::rmarkdown}
