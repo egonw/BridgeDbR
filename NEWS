@@ -1,3 +1,10 @@
+CHANGED IN VERSION 1.17.4
+-------------------------
+
+BUG FIXES
+
+    o added missing link to the Bioconductor webpage in the vignette
+
 CHANGED IN VERSION 1.17.3
 -------------------------
 
