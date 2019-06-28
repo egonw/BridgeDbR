@@ -1,2 +1,2 @@
 install.packages("BiocManager")
-BiocManager::install("BridgeDbR")
+biocLite(pkgs=c("BridgeDbR"))
