@@ -2,7 +2,7 @@ Package: BridgeDbR
 Type: Package
 Title: Code for using BridgeDb identifier mapping framework from within
         R
-Version: 1.19.0
+Version: 1.20.0
 Date: 2019-04-07
 Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen
         <egon.willighagen@gmail.com>, Anwesha Bohler
