@@ -116,6 +116,13 @@ from the following locations:
 * [Metabolites](https://www.bridgedb.org/mapping-databases/hmdb-metabolite-mappings/)
 * [Metabolic Interactions](https://www.bridgedb.org/mapping-databases/rhea-interaction-mappings/)
 
+Add the dbLocation with the following lines (first obtain in which folder, aka working directory 'wd', you are currently).
+Add the correct folder location at the dots:
+```{r, eval=FALSE}
+getwd()
+dbLocation <- ("/home/..../BridgeDb/wikidata_diseases.bridge")
+```
+
 ## Loading Databases
 
 Once you have downloaded an identifier mapping database, either manually or via the getDatabase()
