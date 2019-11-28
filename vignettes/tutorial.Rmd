@@ -27,7 +27,7 @@ references:
 for mapping identifiers for identical objects [@VanIersel2010]. Because BridgeDb is
 use by projects in bioinformatics, like [WikiPathways](http://wikipathways.org/) [@Pico2008] and
 [PathVisio](http://pathvisio.org/) [@VanIersel2008],
-identifier mapping databases are available for gene products and metabolites.
+identifier mapping databases are available for gene products (including proteins), metabolites, and metabolic conversions. We are also working on a disease database mapping file.
 
 Questions can be directed to the [BridgeDb Google Group](https://groups.google.com/forum/#!forum/bridgedb-discuss).
 
@@ -37,6 +37,8 @@ page describes how to install the package. After installation, the library can b
 ```{r}
 library(BridgeDbR)
 ```
+
+*Note: if you have trouble with rJava (required package), please follow the instructions [here](https://github.com/hannarud/r-best-practices/wiki/Installing-RJava-(Ubuntu)) for Ubuntu.
 
 # Concepts
 
@@ -59,9 +61,8 @@ code
 ## Data Sources
 
 Identifiers have a context and this context is often a database. For example, metabolite identfiers
-can be provided by the Human Metabolome Database (HMDB), ChemSpider, PubChem, and ChEBI. Similarly,
-gene product identifiers can be provided by databases like Ensemble. Such a database providing
-identifiers is in BridgeDb called a data source.
+can be provided by the Human Metabolome Database (HMDB), ChemSpider, PubChem, ChEBI, and many others. Similarly,
+gene product identifiers can be provided by databases like Ensembl, (NCBI) Entrez Gene, Uniprot etc. Such a database providing identifiers is called a data source in BridgeDb.
 
 Importantly, each such data source is identified by a human readable long name and by a short
 system code. This package has methods to interconvert one into the other:
@@ -88,7 +89,7 @@ getMatchingSources("ENSG00000100030")
 
 The BridgeDb package primarily provides the software framework, and not identifier mapping
 data. Identifier Mapping databases can be downloaded from various websites. The package
-knows about the download location provided by PathVisio, and we can query for all gene
+knows about the download location (provided by PathVisio), and we can query for all gene
 product identifier mapping databases:
 
 ```{r, eval=FALSE}
@@ -111,9 +112,9 @@ downloaded.
 Mapping databases can also be manually downloaded for genes, metabolites, and gene variants
 from the following locations:
 
-* [Genes, Transcripts, and Proteins](http://bridgedb.org/data/gene_database/)
-* [Metabolites](http://bridgedb.org/data/gene_database/)
-* [Gene Variants](http://bridgedb.org/data/variant/)
+* [Genes, Transcripts, and Proteins](https://www.bridgedb.org/mapping-databases/ensembl-gene-mappings/)
+* [Metabolites](https://www.bridgedb.org/mapping-databases/hmdb-metabolite-mappings/)
+* [Metabolic Interactions](https://www.bridgedb.org/mapping-databases/rhea-interaction-mappings/)
 
 ## Loading Databases
 
