@@ -1,3 +1,10 @@
+CHANGED IN VERSION 1.21.1
+-------------------------
+
+BUG FIXES
+
+    o no longer tries to get Derby file names online
+
 CHANGED IN VERSION 1.17.5
 -------------------------
 
