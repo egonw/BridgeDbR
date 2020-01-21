@@ -91,7 +91,7 @@ data. Identifier Mapping databases can be downloaded from various websites. The 
 knows about the download location provided by PathVisio, and we can query for all gene
 product identifier mapping databases:
 
-```{r}
+```{r, eval=FALSE}
 getBridgeNames()
 ```
 
