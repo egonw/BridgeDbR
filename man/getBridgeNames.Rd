@@ -27,8 +27,8 @@ getBridgeNames(code, website, pattern)
  \item{list}{the list of available BridgeDb mapping files}
 }
 \examples{
-files <- getBridgeNames("Hs")
 \dontrun{
+files <- getBridgeNames("Hs")
 prereleases <- getBridgeNames(
     website="http://bridgedb.org/data/gene_database/pre-release/",
     pattern="metabolites_\\d*.bridge"
