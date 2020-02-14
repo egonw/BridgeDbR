@@ -18,7 +18,24 @@ getDatabase <- function(organism,location=NA,website="https://bridgedb.github.io
   }
   j = j+1
  }
- url = paste(website,names[c],sep="")
+
+ pattern = paste("http[^\"]*\">", names[c], sep="")
+ site = RCurl::basicTextGatherer()
+ RCurl::curlPerform(url=website, writefunction=site$update)
+ expr<- gregexpr(pattern,site$value(), perl=TRUE)
+
+ i = 1
+ result <- c()
+ matches = expr[[1]]
+ matchLengths = attributes(matches)$match.length
+ for (matchCounter in 1:length(matches)) {
+   start = matches[matchCounter]
+   stop = start + matchLengths[matchCounter] - (nchar(names[c]) + 3)
+   result[i] <- substr(site$value(),start,stop)
+   i = i+1
+ }
+
+ url = result[1]
  file = paste(location,"/",name,sep="")
  download.file(url,file, mode="wb")
  file

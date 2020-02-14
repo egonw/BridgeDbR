@@ -5,6 +5,7 @@ BUG FIXES
 
     o updated URL of the /data/gene_database/ location to point directly to bridgedb.github.io
     o now uses the smaller Bs mapping database as test data in the example
+    o updated the code for getDatabase() to allow downloading data from any location provided by /data/gene_database/
 
 CHANGED IN VERSION 1.21.1
 -------------------------
