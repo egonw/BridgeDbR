@@ -22,7 +22,7 @@ loadDatabase(location)
  \item{mapper}{an IDMapper object}
 }
 \examples{
-location <- getDatabase("Mycobacterium tuberculosis")
+location <- getDatabase("Bacillus subtilis")
 mapper <- loadDatabase(location)
 }
 \author{
