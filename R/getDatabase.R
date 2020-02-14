@@ -1,4 +1,4 @@
-getDatabase <- function(organism,location=NA,website="https://www.bridgedb.org/data/gene_database/") {
+getDatabase <- function(organism,location=NA,website="https://bridgedb.github.io/data/gene_database/") {
  if(is.na(location)) location = tempdir();
  code = getOrganismCode(organism)
  names = getBridgeNames(code,website=website)
