@@ -19,7 +19,7 @@ map(mapper, source, identifier, target)
  \item{mappings}{a vector of mapped identifiers for the target data source}
 }
 \examples{
-location <- getDatabase("Mycobacterium tuberculosis")
+location <- getDatabase("Bacillus subtilis")
 mapper <- loadDatabase(location)
 map(mapper, "L", "885041", "X")
 map(mapper, "L", "885041")
