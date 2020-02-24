@@ -12,6 +12,8 @@ parameter can be used to restrict the list to a specific organism.
 Occassionally, the ID mapping file download website changes the pattern of the
 file names. In that case, you can provide an alternative filename pattern to
 recognize files on the download site.
+
+This method uses data from https://bridgedb.github.io/data/gene_database/.
 }
 \usage{
 getBridgeNames(code, website, pattern)

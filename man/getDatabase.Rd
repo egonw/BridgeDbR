@@ -7,6 +7,10 @@ Downloads a identifier mapping database for the given organism.
 Downloads a identifier mapping database for the given organism. The optional
 location parameter can be used to indicate where the file should be stored.
 If not give, it will save it in a temporary folder.
+
+This method extracts links from https://bridgedb.github.io/data/gene_database/
+to identifier mapping databases hosted on Zenodo and Figshare, two public
+data archives.
 }
 \usage{
 getDatabase(organism,location,website)
