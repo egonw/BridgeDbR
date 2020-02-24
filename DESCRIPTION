@@ -2,8 +2,8 @@ Package: BridgeDbR
 Type: Package
 Title: Code for using BridgeDb identifier mapping framework from within
         R
-Version: 1.21.2
-Date: 2020-02-14
+Version: 1.21.3
+Date: 2020-02-24
 Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen
         <egon.willighagen@gmail.com>, Anwesha Bohler
         <anweshabohler@gmail.com>, Lars Eijssen
@@ -25,7 +25,8 @@ Imports: RCurl
 VignetteBuilder: knitr
 Suggests: BiocStyle, knitr, rmarkdown, testthat
 Description: Use BridgeDb functions and load identifier mapping
-        databases in R.
+        databases in R. It uses GitHub, Zenodo, and Figshare if
+        you use this package to download identifier mappings files.
 biocViews: Software, Annotation, Metabolomics, Cheminformatics
 License: AGPL-3
 LazyLoad: yes

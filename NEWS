@@ -1,3 +1,11 @@
+CHANGED IN VERSION 1.21.3
+-------------------------
+
+BUG FIXES
+
+    o force RCurl to use TSL1.2
+    o added clarification of external data sources used
+
 CHANGED IN VERSION 1.21.2
 -------------------------
 
