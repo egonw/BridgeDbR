@@ -21,7 +21,7 @@ Authors@R: c(person("Chris", "Leemans", role = c("aut"),
            )
 Maintainer: Egon Willighagen <egon.willighagen@gmail.com>
 Depends: R (>= 3.3.0), rJava
-Imports: RCurl
+Imports: curl
 VignetteBuilder: knitr
 Suggests: BiocStyle, knitr, rmarkdown, testthat
 Description: Use BridgeDb functions and load identifier mapping

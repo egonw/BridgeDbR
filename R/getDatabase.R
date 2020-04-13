@@ -1,10 +1,5 @@
 getDatabase <- function(organism,location=NA,website="https://bridgedb.github.io/data/gene_database/") {
  if(is.na(location)) location = tempdir();
- # force TSL1.2 with RCurl
- CURL_SSLVERSION_TLSv1_2 <- 6L
- opts <- RCurl::curlOptions(
-   sslversion = CURL_SSLVERSION_TLSv1_2
- )
 
  code = getOrganismCode(organism)
  names = getBridgeNames(code,website=website)
@@ -26,19 +21,24 @@ getDatabase <- function(organism,location=NA,website="https://bridgedb.github.io
  }
 
  pattern = paste("http[^\"]*\">", names[c], sep="")
- site = RCurl::basicTextGatherer()
- RCurl::curlPerform(url=website, writefunction=site$update, .opts=opts)
- expr<- gregexpr(pattern,site$value(), perl=TRUE)
+ lines = readLines(curl(website))
 
  i = 1
  result <- c()
- matches = expr[[1]]
- matchLengths = attributes(matches)$match.length
- for (matchCounter in 1:length(matches)) {
+
+ for (line in lines) {
+  expr<- gregexpr(pattern,line, perl=TRUE)
+  matches = expr[[1]]
+  matchLengths = attributes(matches)$match.length
+  for (matchCounter in 1:length(matches)) {
    start = matches[matchCounter]
    stop = start + matchLengths[matchCounter] - (nchar(names[c]) + 3)
-   result[i] <- substr(site$value(),start,stop)
-   i = i+1
+   matchedString = substr(line,start,stop)
+   if (nchar(matchedString) > 0) {
+    result[i] <- matchedString
+    i = i + 1
+   }
+  }
  }
 
  url = result[1]

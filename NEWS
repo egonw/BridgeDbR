@@ -4,6 +4,7 @@ CHANGED IN VERSION 1.21.4
 BUG FIXES
 
     o updated the Apache Derby library to 10.5.3.0 (fixing compatibility with newer ID mapping databases)
+    o replaced RCurl with curl to fix downloading on Windows
 
 CHANGED IN VERSION 1.21.3
 -------------------------

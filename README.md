@@ -46,7 +46,7 @@ To create the vignette:
 To install the packages from within R with the devtools package:
 
     > install.packages("rJava") # if not present already
-    > install.packages("RCurl") # if not present already
+    > install.packages("curl") # if not present already
     > install.packages("devtools") # if not present already
     > library(devtools)
     > install_github("bridgedb/BridgeDbR")
@@ -54,7 +54,7 @@ To install the packages from within R with the devtools package:
 Dependencies
 ============
 
-This package requires RCurl and RJava, which can be installed with:
+This package requires curl and RJava, which can be installed with:
 
-    install.packages(pkgs=c("rJava", "RCurl"))
+    install.packages(pkgs=c("rJava", "curl"))
 
