@@ -12,6 +12,7 @@ export(
  getAttributes,
  registerDataSource,
  loadDatabase,
+ getProperties,
  map,
  fullNameExists,
  systemCodeExists

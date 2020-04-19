@@ -1,3 +1,10 @@
+CHANGED IN VERSION 1.21.6
+-------------------------
+
+NEW FEATURES
+
+    o adds a getProperties() method
+
 CHANGED IN VERSION 1.21.5
 -------------------------
 
