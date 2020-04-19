@@ -16,7 +16,7 @@ map(mapper, source, identifier, target)
  \item{target}{system code of the target data source (optional)}
 }
 \value{
- \item{mappings}{a vector of mapped identifiers for the target data source}
+ \item{mappings}{a data frame of mapped identifiers for the target data source}
 }
 \examples{
 location <- getDatabase("Bacillus subtilis")

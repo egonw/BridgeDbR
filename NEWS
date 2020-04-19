@@ -5,6 +5,10 @@ NEW FEATURES
 
     o adds a getProperties() method
 
+SIGNIFICANT USER-LEVEL CHANGES
+
+    o the map() method now returns a data frame
+
 CHANGED IN VERSION 1.21.5
 -------------------------
 
