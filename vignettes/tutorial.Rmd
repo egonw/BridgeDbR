@@ -148,31 +148,16 @@ Mind you, this returns more than one identifier, as BridgeDb is generally a one 
 
 ## Mapping multiple identifiers
 
-For mapping multiple identifiers, for example in a matrix, there is currently no convenience mapping
-yet (planned), but with an apply method possible with the following code. However, because
-there can be multiple mapped identifers for a single identifier, we need a bit of extra logic and
-select a (random) mapped identifier. We can put this in a helper function. Mind you, this helper
-function has loaded database ("mapper") and the source and target data sources (HMDB and Wikidata,
-respectively) hardcoded:
+For mapping multiple identifiers, for example in a data frame, you can use the new "maps()"
+convenience method. Let's assume we have a data frame, data, with a HMDB identifier in the second column,
+we can get Wikidata identifiers with this code:
 
 ```{r, eval=FALSE}
-mapToSingle = function(x) {
-  mappings = map(mapper, "Ch", x, "Wd")
-  if (length(mappings) == 1) {
-    result = mappings
-  } else {
-    result = mappings[1]
-  }
-  return(result)
-}
-```
-
-Let's assume we have a data frame, data, with a HMDB identifier in the second column, we can append
-a column with Wikidata identifiers with this code:
-
-```{r, eval=FALSE}
-wikidata = unlist(sapply(as.character(data[,2]), mapToSingle))
-data2 = cbind(c(wikidata,""),data)
+input = data.frame(
+  source= rep("Ch", length(data[,2])),
+  identifer= data[,2]
+)
+wikidata = maps(mapper, input, "Wd")
 ```
 
 # Metabolomics
