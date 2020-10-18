@@ -1,3 +1,18 @@
+CHANGES IN VERSION 1.99.0
+-------------------------
+
+BUG FIXES
+
+    o Added missing NEWS section for 1.23.1
+    o BridgeDb 3.0.0-SNAPSHOT (2020-10-18)
+
+CHANGES IN VERSION 1.23.1
+-------------------------
+
+SIGNIFICANT USER-LEVEL CHANGES
+
+    o no longer supports 32bit on Windows
+
 CHANGED IN VERSION 1.21.6
 -------------------------
 
