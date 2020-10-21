@@ -26,7 +26,7 @@ getDatabase(organism,location,website)
  \item{location}{the location where the database was saved}
 }
 \examples{
-location <- getDatabase("Bacillus subtilis")
+\dontrun{location <- getDatabase("Bacillus subtilis")}
 \dontrun{location <- getDatabase("Homo sapiens")}
 }
 \author{

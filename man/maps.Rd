@@ -18,6 +18,7 @@ maps(mapper, identifiers, target)
  \item{mappings}{a data frame of mapped identifiers for the target data source}
 }
 \examples{
+\dontrun{
 location <- getDatabase("Bacillus subtilis")
 mapper <- loadDatabase(location)
 input = data.frame(
@@ -25,6 +26,7 @@ input = data.frame(
   identifier= c("885041")
 )
 maps(mapper,input)
+}
 }
 \author{
 Egon Willighagen
