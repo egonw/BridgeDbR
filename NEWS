@@ -20,7 +20,7 @@ SIGNIFICANT USER-LEVEL CHANGES
 
     o no longer supports 32bit on Windows
 
-CHANGED IN VERSION 1.21.6
+CHANGES IN VERSION 1.21.6
 -------------------------
 
 NEW FEATURES
@@ -32,14 +32,14 @@ SIGNIFICANT USER-LEVEL CHANGES
 
     o the map() method now returns a data frame
 
-CHANGED IN VERSION 1.21.5
+CHANGES IN VERSION 1.21.5
 -------------------------
 
 BUG FIXES
 
     o fixed links in the Vignette and some further clarification
 
-CHANGED IN VERSION 1.21.4
+CHANGES IN VERSION 1.21.4
 -------------------------
 
 BUG FIXES
@@ -47,7 +47,7 @@ BUG FIXES
     o updated the Apache Derby library to 10.5.3.0 (fixing compatibility with newer ID mapping databases)
     o replaced RCurl with curl to fix downloading on Windows
 
-CHANGED IN VERSION 1.21.3
+CHANGES IN VERSION 1.21.3
 -------------------------
 
 BUG FIXES
@@ -55,7 +55,7 @@ BUG FIXES
     o force RCurl to use TSL1.2
     o added clarification of external data sources used
 
-CHANGED IN VERSION 1.21.2
+CHANGES IN VERSION 1.21.2
 -------------------------
 
 BUG FIXES
@@ -64,14 +64,14 @@ BUG FIXES
     o now uses the smaller Bs mapping database as test data in the example
     o updated the code for getDatabase() to allow downloading data from any location provided by /data/gene_database/
 
-CHANGED IN VERSION 1.21.1
+CHANGES IN VERSION 1.21.1
 -------------------------
 
 BUG FIXES
 
     o no longer tries to get Derby file names online
 
-CHANGED IN VERSION 1.17.5
+CHANGES IN VERSION 1.17.5
 -------------------------
 
 NEW FEATURES
@@ -79,14 +79,14 @@ NEW FEATURES
     o added a link to the vignette to the Figshare Metabolics ID mapping
       database collection
 
-CHANGED IN VERSION 1.17.4
+CHANGES IN VERSION 1.17.4
 -------------------------
 
 BUG FIXES
 
     o added missing link to the Bioconductor webpage in the vignette
 
-CHANGED IN VERSION 1.17.3
+CHANGES IN VERSION 1.17.3
 -------------------------
 
 NEW FEATURES
@@ -94,7 +94,7 @@ NEW FEATURES
     o added an attempt to have BioSchemas annotation in the vignette
     o now points to the issue tracker of the new GitHub code repository
 
-CHANGED IN VERSION 1.17.2
+CHANGES IN VERSION 1.17.2
 -------------------------
 
 NEW FEATURES
@@ -102,7 +102,7 @@ NEW FEATURES
     o added getAttributes() that returns the attributes (properties) for the
       given identifier
 
-CHANGED IN VERSION 1.17.1
+CHANGES IN VERSION 1.17.1
 -------------------------
 
 NEW FEATURES
@@ -114,7 +114,7 @@ BUG FIXES
 
     o Fixed the default database download server URL (now uses https)
 
-CHANGED IN VERSION 1.15.1
+CHANGES IN VERSION 1.15.1
 -------------------------
 
 NEW FEATURES
@@ -122,14 +122,14 @@ NEW FEATURES
     o README now uses BiocManager for instructions how to install the package
 
 
-CHANGED IN VERSION 1.15.1
+CHANGES IN VERSION 1.15.1
 -------------------------
 
 NEW FEATURES
 
     o Updated to BridgeDb 2.3.0
 
-CHANGED IN VERSION 1.13.6
+CHANGES IN VERSION 1.13.6
 -------------------------
 
 NEW FEATURES
@@ -137,35 +137,35 @@ NEW FEATURES
     o Uses BibTeX again (in the RMarkdown tutorial)
     o Added a section on metabolomics to the tutorial
 
-CHANGED IN VERSION 1.13.5
+CHANGES IN VERSION 1.13.5
 -------------------------
 
 NEW FEATURES
 
     o Added to the Metabolomics and Cheminformatics views
 
-CHANGED IN VERSION 1.13.4
+CHANGES IN VERSION 1.13.4
 -------------------------
 
 NEW FEATURES
 
     o Converted the vignette to RMarkdown
 
-CHANGED IN VERSION 1.13.3
+CHANGES IN VERSION 1.13.3
 -------------------------
 
 BUG FIXES
 
     o Fixed the URLs for GitHub and the issue tracker
 
-CHANGED IN VERSION 1.13.2
+CHANGES IN VERSION 1.13.2
 -------------------------
 
 NEW FEATURES
 
     o Restored the original README.md for visitors of GitHub particularly
 
-CHANGED IN VERSION 1.13.1
+CHANGES IN VERSION 1.13.1
 -------------------------
 
 NEW FEATURES
@@ -173,14 +173,14 @@ NEW FEATURES
     o Added information on how to manually download
       mapping databases
 
-CHANGED IN VERSION 1.11.5
+CHANGES IN VERSION 1.11.5
 -------------------------
 
 NEW FEATURES
 
     o Added ORCID id for a few authors/maintainers
 
-CHANGED IN VERSION 1.11.4
+CHANGES IN VERSION 1.11.4
 -------------------------
 
 BUG FIXES
@@ -188,14 +188,14 @@ BUG FIXES
     o Updated to BridgeDb 2.2.2: fixes recognition of new
       HMDB identifiers (closes #1)
 
-CHANGED IN VERSION 1.10.2
+CHANGES IN VERSION 1.10.2
 -------------------------
 
 BUG FIXES
 
     o Fixed the NEWS for 1.10.1
 
-CHANGED IN VERSION 1.10.1
+CHANGES IN VERSION 1.10.1
 -------------------------
 
 NEW FEATURES
@@ -207,7 +207,7 @@ BUG FIXES
     o Updated to BridgeDb 2.2.0: fixes loading of mapping
       files with new data sources
 
-CHANGED IN VERSION 1.9.3
+CHANGES IN VERSION 1.9.3
 ------------------------
 
 NEW FEATURES
@@ -220,7 +220,7 @@ BUG FIXES
 
     o Updated file pattern for getBridgeNames()
 
-CHANGED IN VERSION 1.7.2
+CHANGES IN VERSION 1.7.2
 ------------------------
 
 NEW FEATURES
