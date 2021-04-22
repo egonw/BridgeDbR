@@ -110,11 +110,11 @@ The dbLocation variable then contains the location of the identifier mapping fil
 downloaded.
 
 Mapping databases can also be manually downloaded for genes, metabolites, and gene variants
-from the following locations:
+from [https://bridgedb.github.io/data/gene_database/](https://bridgedb.github.io/data/gene_database/):
 
-* [Genes, Transcripts, and Proteins](https://www.bridgedb.org/mapping-databases/ensembl-gene-mappings/)
-* [Metabolites](https://www.bridgedb.org/mapping-databases/hmdb-metabolite-mappings/)
-* [Metabolic Interactions](https://www.bridgedb.org/mapping-databases/rhea-interaction-mappings/)
+* Genes, Transcripts, and Proteins
+* Metabolites
+* Metabolic Interactions
 
 Add the dbLocation with the following lines (first obtain in which folder, aka working directory 'wd', you are currently).
 Add the correct folder location at the dots:
