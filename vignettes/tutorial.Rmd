@@ -154,8 +154,8 @@ we can get Wikidata identifiers with this code:
 
 ```{r, eval=FALSE}
 input = data.frame(
-  source= rep("Ch", length(data[,2])),
-  identifer= data[,2]
+  source = rep("Ch", length(data[,2])),
+  identifier = data[,2]
 )
 wikidata = maps(mapper, input, "Wd")
 ```
