@@ -12,11 +12,11 @@ map <- function(mapper, source, identifier, target=NULL){
   str <- strsplit(str[[1]][2],"\\]")
   str <- strsplit(str[[1]][1],", ")
   foo <- unlist(str)
-  targetcodes <- sapply(foo, function(x) { unlist(strsplit(x,":")[[1]])[1] })
+  targetcodes <- sapply(foo, function(x) {gsub(":.*","",x)})
   names(targetcodes) <- c()
-  mappings <- sapply(foo, function(x) { unlist(strsplit(x,":")[[1]])[2] })
+  mappings <- sapply(foo, function(x) {gsub(":[^:]*$|^[^:]*:","",x)})
   names(mappings) <- c()
-  isPrimary <- sapply(foo, function(x) { unlist(strsplit(x,":")[[1]])[3] })
+  isPrimary <- sapply(foo, function(x) {gsub(".*:","",x)})
   data.frame(
    source = rep(source, length(mappings)),
    identifier = rep(identifier, length(mappings)),
