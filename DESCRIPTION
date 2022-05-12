@@ -2,12 +2,12 @@ Package: BridgeDbR
 Type: Package
 Title: Code for using BridgeDb identifier mapping framework from within
         R
-Version: 2.7.1
+Version: 2.7.2
 Date: 2022-05-12
 Author: Christ Leemans <christleemans@gmail.com>, Egon Willighagen
-        <egon.willighagen@gmail.com>, Anwesha Bohler
+        <egon.willighagen@gmail.com>, Denise Slenter, Anwesha Bohler
         <anweshabohler@gmail.com>, Lars Eijssen
-        <l.eijssen@maastrichtuniversity.nl>
+        <l.eijssen@maastrichtuniversity.nl>, Tooba Abbassi-Daloii
 Authors@R: c(person("Chris", "Leemans", role = c("aut"),
                      email = "christleemans@gmail.com"),
              person("Egon", "Willighagen", role = c("aut","cre"),
@@ -19,7 +19,9 @@ Authors@R: c(person("Chris", "Leemans", role = c("aut"),
                      email = "anweshabohler@gmail.com"),
              person("Lars", "Eijssen", role = "aut",
                      email = "l.eijssen@maastrichtuniversity.nl",
-                     comment = c(ORCID = "0000-0002-6473-2839"))
+                     comment = c(ORCID = "0000-0002-6473-2839")),
+             person("Tooba", "Abbassi-Daloii", role = "aut",
+                    comment = c(ORCID = "0000-0002-4904-3269"))
            )
 Maintainer: Egon Willighagen <egon.willighagen@gmail.com>
 Depends: R (>= 3.3.0), rJava
