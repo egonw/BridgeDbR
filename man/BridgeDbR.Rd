@@ -3,15 +3,19 @@
 \alias{BridgeDbR}
 \docType{package}
 \title{
-BridgeDBR Package.
+BridgeDbR Package.
 }
 \description{
-R package for using BridgeDB directly from R.
+R package for using BridgeDb directly from R.
 }
 \author{
 Christ Leemans
+Anwesha Bohler
+Denise Slenter
+Lars Eijssen
+Tooba Abbassi-Daloii
 
-Maintainer: Anwesha Bohler <anweshabohler@gmail.com>
+Maintainer: Egon Willighagen <egon.willighagen@gmail.com>
 }
 \keyword{ package }
 \keyword{ BridgeDB }
