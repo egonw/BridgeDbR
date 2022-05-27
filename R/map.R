@@ -1,5 +1,11 @@
-map <- function(mapper, source, identifier, target=NULL){
-  datasource <- getDataSource(code=source)
+map <- function(mapper, source, identifier, compactIdentifier=NA, target=NULL){
+  if (!is.na(compactIdentifier)) {
+    source <- gsub(":.*", "", compactIdentifier)
+    identifier <- gsub(".*:", "", compactIdentifier)
+    datasource <- getDataSource(prefix=source)
+  } else {
+    datasource <- getDataSource(code=source)
+  }
   xref <- .jnew("org/bridgedb/Xref", identifier, datasource)
   if (!is.null(target)) {
     datatarget <- getDataSource(code=target)
