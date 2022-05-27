@@ -5,6 +5,8 @@ NEW FEATURES
 
     o Updated to BridgeDb 3.0.14
     o Support primary/secondary identifier annotation
+    o Added mapping Bioregistry.io compact identifiers
+    o Added getting a DataSource by their Bioregistry.io prefix
 
 BUG FIXES
 
