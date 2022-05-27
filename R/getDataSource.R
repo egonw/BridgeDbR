@@ -1,6 +1,12 @@
-getDataSource <- function(name=NA, code=NA){
+getDataSource <- function(name=NA, code=NA, prefix=NA){
   datasource = NULL
-  if (!is.na(name)) {
+  if (!is.na(prefix)) {
+    datasource <- .jcall(
+     "org/bridgedb/DataSource",
+     "Lorg/bridgedb/DataSource;",
+     "getExistingByBioregistryPrefix",prefix
+    )
+  } else if (!is.na(name)) {
     datasource <- .jcall(
      "org/bridgedb/DataSource",
      "Lorg/bridgedb/DataSource;",
