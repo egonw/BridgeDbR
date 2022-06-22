@@ -175,13 +175,18 @@ If reproducibility is important to you, you can download the file with (mind you
 quite large):
 
 ```{r, eval=FALSE}
-file <- "metabolites_20180201.bridge"
+##Set the working directory to download the Metabolite mapping file
+location <- "data/metabolites.bridge"
+checkfile <- paste0(getwd(), '/' ,location)
+
+##Download the Metabolite mapping file (if it doesn't exist locally yet):
+if (!file.exists(checkfile)) {
 download.file(
-  "https://ndownloader.figshare.com/files/10358973",
-  location
-)
-location = normalizePath(file)
-mapper <- loadDatabase(location)
+  "https://figshare.com/ndownloader/files/26001794",
+  location)
+}
+#Load the ID mapper:
+mapper <-  BridgeDbR ::loadDatabase(checkfile)
 ```
 
 With this mapper you can then map metabolite identifiers:
