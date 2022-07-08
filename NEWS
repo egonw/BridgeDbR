@@ -3,6 +3,13 @@ CHANGES IN VERSION 2.7.3
 
 NEW FEATURES
 
+    o improved code
+
+CHANGES IN VERSION 2.7.3
+------------------------
+
+NEW FEATURES
+
     o Updated to BridgeDb 3.0.14
     o Support primary/secondary identifier annotation
     o Added mapping Bioregistry.io compact identifiers
