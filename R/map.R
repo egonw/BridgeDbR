@@ -1,16 +1,15 @@
-map <- function(mapper, source, identifier, compactIdentifier = NA, target = NULL){
-  # if (!is.na(compactIdentifier)) { # this can be removed unless we add it to the R Documentation
-
-  #   source <- gsub(":.*", "", compactIdentifier)
-  #   identifier <- gsub(".*:", "", compactIdentifier)
-  #   datasource <- getDataSource(prefix=source)
-  # } else {
+function(mapper, source, identifier, compactIdentifier = NA, target = NULL){
+  if (!is.na(compactIdentifier)) { 
+    source <- gsub(":.*", "", compactIdentifier)
+    identifier <- gsub(".*:", "", compactIdentifier)
+    datasource <- getDataSource(prefix=source)
+   } else {
     datasource <- getDataSource(code=source)
-  # }
+   }
   xref <- .jnew("org/bridgedb/Xref", identifier, datasource)
   if (!is.null(target)) {
     datatarget <- getDataSource(code = target)
-    targets <- .jarray(c(datatarget), contents.class ="org/bridgedb/DataSource")
+    targets <- .jarray(c(datatarget), contents.class = "org/bridgedb/DataSource")
   } else {
     targets <- .jarray(list(), contents.class = "org/bridgedb/DataSource")
   }
