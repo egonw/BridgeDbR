@@ -1,4 +1,4 @@
-function(mapper, source, identifier, compactIdentifier = NA, target = NULL){
+map <- function(mapper, source, identifier, compactIdentifier = NA, target = NULL){
   if (!is.na(compactIdentifier)) { 
     source <- gsub(":.*", "", compactIdentifier)
     identifier <- gsub(".*:", "", compactIdentifier)
