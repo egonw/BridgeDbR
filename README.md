@@ -1,3 +1,8 @@
+[![BioC Release Build Status](http://bioconductor.org/shields/build/release/bioc/BridgeDbR.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/BridgeDbR/) - Bioconductor Release Build
+
+[![BioC Dev Build Status](http://bioconductor.org/shields/build/devel/bioc/BridgeDbR.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/BridgeDbR/) - Bioconductor Dev Build
+
+
 # BridgeDbR package
 
 R package for BridgeDb, a tool for identifier mapping.
