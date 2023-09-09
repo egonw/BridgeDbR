@@ -1,0 +1,31 @@
+\name{exists}
+\alias{exists}
+\title{
+Checks if the given identifier exists
+}
+\description{
+Checks if the given identifier exists in the given mapping file
+}
+\usage{
+exists(mapper, source, identifier, compactIdentifier)
+}
+\arguments{
+ \item{mapper}{loaded BridgeDb identifier mapper}
+ \item{source}{system code of the data source}
+ \item{identifier}{identifier to be searched}
+ \item{compactIdentifier}{the Bioregistry.io compact identifier to check}
+}
+\value{
+ \item{boolean}{true, if the given identifier is found in the mapping database}
+}
+\examples{
+\dontrun{
+location <- getDatabase("Bacillus subtilis")
+mapper <- loadDatabase(location)
+exists(mapper, "L", "885041")
+exists(mapper, compactIdentifier="ncbigene:885041")
+}
+}
+\author{
+Egon Willighagen
+}

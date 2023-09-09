@@ -5,6 +5,7 @@ NEW FEATURES
 * Migrated `NEWS` to `NEWS.md`
 * Applied BioC code styling
 * Added templates for issues and feature requests
+* Added a method `exists(mapper, xref)` that checks if the xref is found in the mapping file
 
 SIGNIFICANT USER-VISIBLE CHANGES
 
