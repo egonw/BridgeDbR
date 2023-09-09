@@ -24,7 +24,6 @@ map <- function(mapper, source, identifier, target = NULL, compactIdentifier = N
     isPrimary <- lapply(str, function(x) {
         gsub(".*:", "", x)
     })
-    sprintf("isPrimary %s", isPrimary)
     data.frame(
         source = source,
         identifier = identifier,
