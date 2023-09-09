@@ -1,3 +1,14 @@
+# BridgeDbR 2.11.1
+
+NEW FEATURES
+
+* Migrated `NEWS` to `NEWS.md`
+* Applied BioC code styling
+* Added templates for issues and feature requests
+
+# Older News
+
+```
 CHANGES IN VERSION 2.11.1
 ------------------------
 
@@ -85,7 +96,7 @@ BUG FIXES
 CHANGES IN VERSION 1.23.1
 -------------------------
 
-SIGNIFICANT USER-LEVEL CHANGES
+SIGNIFICANT USER-VISIBLE CHANGES
 
     o no longer supports 32bit on Windows
 
@@ -370,3 +381,4 @@ BUG FIXES
 
     o No changes classified as 'bug fixes' (package under active
     development)
+```
