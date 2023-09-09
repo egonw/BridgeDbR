@@ -129,8 +129,10 @@ dbLocation <- ("/home/..../BridgeDb/wikidata_diseases.bridge")
 
 ## Loading Databases
 
-Once you have downloaded an identifier mapping database, either manually or via the getDatabase()
+Once you have downloaded an identifier mapping database, either manually or via the `getDatabase()`
 method, you need to load the database for the identifier mappings to become available.
+It is important to note that the location given to the `loadDatabase()` method is ideally
+an absolute path.
 
 ```{r, eval=FALSE}
 mapper <- loadDatabase(dbLocation)
