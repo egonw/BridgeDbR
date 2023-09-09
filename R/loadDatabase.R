@@ -1,5 +1,6 @@
 loadDatabase <- function(location) {
-    if (is.na(location)) location <- tempdir()
+    if (!file.exists(location))
+        stop(paste('The BridgeDb Derby file', location, 'does not exist in this folder.', sep=" "))
     J("org.bridgedb.rdb.SimpleGdbFactory")$createInstance(
         location,
         paste("jdbc:derby:jar:(", location, ")database", sep = "")

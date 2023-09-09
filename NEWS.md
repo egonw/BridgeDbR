@@ -6,6 +6,10 @@ NEW FEATURES
 * Applied BioC code styling
 * Added templates for issues and feature requests
 
+SIGNIFICANT USER-VISIBLE CHANGES
+
+* `loadDatabase()` now reports an error if the given location does not exist
+
 BUG FIXES
 
 * Clarified in the vignette the output `getMatchingSources()`
