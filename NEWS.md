@@ -15,6 +15,7 @@ BUG FIXES
 
 * Fixed backwards compatibility of map()
 * Clarified in the vignette the output `getMatchingSources()`
+* Fixed returning an empty data frame when no mappings are found for `map()`
 
 # BridgeDbR 2.9.2
 

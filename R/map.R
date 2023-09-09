@@ -14,6 +14,14 @@ map <- function(mapper, source, identifier, target = NULL, compactIdentifier = N
         targets <- .jarray(list(), contents.class = "org/bridgedb/DataSource")
     }
     mappings <- mapper$mapID(xref, targets)
+    if (mappings$size() == 0) {
+        return(
+            data.frame(
+                source=character(), identifier=character(), target=character(),
+                mapping=character(), isPrimary=character()
+            )
+        )
+    }
     str <- strsplit(gsub(".*\\[|].*", "", mappings$toString()), ", ")
     targetcodes <- lapply(str, function(x) {
         gsub(":.*", "", x, )
