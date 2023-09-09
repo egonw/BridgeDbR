@@ -16,4 +16,5 @@ maps <- function(mapper, identifiers, target = NULL) {
             )
         }
     })))
+    allResults
 }
