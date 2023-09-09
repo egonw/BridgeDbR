@@ -54,7 +54,7 @@ identifier mapping files provided by PathVisio have names with these short codes
 have a conversion method:
 
 ```{r}
-code = getOrganismCode("Rattus norvegicus")
+code <- getOrganismCode("Rattus norvegicus")
 code
 ```
 
@@ -103,7 +103,7 @@ a convenience method to download such identifier mapping databases. For example,
 identifier mapping database for rat to the current folder with:
 
 ```{r, eval=FALSE}
-dbLocation <- getDatabase("Rattus norvegicus",location=getwd())
+dbLocation <- getDatabase("Rattus norvegicus", location = getwd())
 ```
 
 The dbLocation variable then contains the location of the identifier mapping file that was
@@ -153,11 +153,11 @@ convenience method. Let's assume we have a data frame, data, with a HMDB identif
 we can get Wikidata identifiers with this code:
 
 ```{r, eval=FALSE}
-input = data.frame(
-  source = rep("Ch", length(data[,2])),
-  identifier = data[,2]
+input <- data.frame(
+    source = rep("Ch", length(data[, 2])),
+    identifier = data[, 2]
 )
-wikidata = maps(mapper, input, "Wd")
+wikidata <- maps(mapper, input, "Wd")
 ```
 
 # Metabolomics
@@ -175,24 +175,25 @@ If reproducibility is important to you, you can download the file with (mind you
 quite large):
 
 ```{r, eval=FALSE}
-##Set the working directory to download the Metabolite mapping file
+## Set the working directory to download the Metabolite mapping file
 location <- "data/metabolites.bridge"
-checkfile <- paste0(getwd(), '/' ,location)
+checkfile <- paste0(getwd(), "/", location)
 
-##Download the Metabolite mapping file (if it doesn't exist locally yet):
+## Download the Metabolite mapping file (if it doesn't exist locally yet):
 if (!file.exists(checkfile)) {
-download.file(
-  "https://figshare.com/ndownloader/files/26001794",
-  location)
+    download.file(
+        "https://figshare.com/ndownloader/files/26001794",
+        location
+    )
 }
-#Load the ID mapper:
-mapper <-  BridgeDbR ::loadDatabase(checkfile)
+# Load the ID mapper:
+mapper <- BridgeDbR::loadDatabase(checkfile)
 ```
 
 With this mapper you can then map metabolite identifiers:
 
 ```{r, eval=FALSE}
-map(mapper, "456", source="Cs", target="Ck")
+map(mapper, "456", source = "Cs", target = "Ck")
 ```
 
 # References

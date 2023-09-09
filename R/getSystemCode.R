@@ -1,5 +1,4 @@
-getSystemCode <- function(name){
-  datasource <- getDataSource(name=name)
-  datasource$getSystemCode() 
+getSystemCode <- function(name) {
+    datasource <- getDataSource(name = name)
+    datasource$getSystemCode()
 }
-  
