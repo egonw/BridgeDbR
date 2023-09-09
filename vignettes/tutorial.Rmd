@@ -85,6 +85,10 @@ getMatchingSources("HMDB00555")
 getMatchingSources("ENSG00000100030")
 ```
 
+You may notice unexpected datasources in the results. That often means that the matcher
+for the identifier structure for that resources is very general. For example, the identifier
+for Wikipedia can be more or less any string.
+
 ## Identifier Mapping Databases
 
 The BridgeDb package primarily provides the software framework, and not identifier mapping

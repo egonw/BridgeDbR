@@ -6,24 +6,17 @@ NEW FEATURES
 * Applied BioC code styling
 * Added templates for issues and feature requests
 
-# Older News
+BUG FIXES
+
+* Clarified in the vignette the output `getMatchingSources()`
+
+# BridgeDbR 2.9.2
+
+* Updated to BridgeDb 3.0.21
+
+Older versions:
 
 ```
-CHANGES IN VERSION 2.11.1
-------------------------
-
-NEW FEATURES
-
-    o Applied BioC code styling
-
-
-CHANGES IN VERSION 2.9.2
-------------------------
-
-NEW FEATURES
-
-    o Updated to BridgeDb 3.0.21
-
 CHANGES IN VERSION 2.9.1
 ------------------------
 
