@@ -13,9 +13,9 @@ export(
  registerDataSource,
  loadDatabase,
  getProperties,
- exists,
  map,
  maps,
+ xrefExists,
  fullNameExists,
  systemCodeExists
 )

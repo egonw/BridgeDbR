@@ -1,4 +1,4 @@
-exists <- function(mapper, source, identifier, compactIdentifier = NA) {
+xrefExists <- function(mapper, source, identifier, compactIdentifier = NA) {
     if (!is.na(compactIdentifier)) {
         source <- gsub(":.*", "", compactIdentifier)
         identifier <- gsub(".*:", "", compactIdentifier)

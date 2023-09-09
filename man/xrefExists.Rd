@@ -1,5 +1,5 @@
-\name{exists}
-\alias{exists}
+\name{xrefExists}
+\alias{xrefExists}
 \title{
 Checks if the given identifier exists
 }
@@ -7,7 +7,7 @@ Checks if the given identifier exists
 Checks if the given identifier exists in the given mapping file
 }
 \usage{
-exists(mapper, source, identifier, compactIdentifier)
+xrefExists(mapper, source, identifier, compactIdentifier)
 }
 \arguments{
  \item{mapper}{loaded BridgeDb identifier mapper}
@@ -22,8 +22,8 @@ exists(mapper, source, identifier, compactIdentifier)
 \dontrun{
 location <- getDatabase("Bacillus subtilis")
 mapper <- loadDatabase(location)
-exists(mapper, "L", "885041")
-exists(mapper, compactIdentifier="ncbigene:885041")
+xrefExists(mapper, "L", "885041")
+xrefExists(mapper, compactIdentifier="ncbigene:885041")
 }
 }
 \author{
