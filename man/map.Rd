@@ -7,14 +7,14 @@ Converts one identifier into other identifiers for the given target data source.
 Converts one identifier into other identifiers for the given target data source.
 }
 \usage{
-map(mapper, source, identifier, compactIdentifier, target)
+map(mapper, source, identifier, target, compactIdentifier)
 }
 \arguments{
  \item{mapper}{loaded BridgeDb identifier mapper}
  \item{source}{system code of the data source}
  \item{identifier}{identifier to be converted}
- \item{compactIdentifier}{the Bioregistry.io compact identifier to convert}
  \item{target}{system code of the target data source (optional)}
+ \item{compactIdentifier}{the Bioregistry.io compact identifier to convert}
 }
 \value{
  \item{mappings}{a data frame of mapped identifiers for the target data source}

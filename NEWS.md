@@ -12,6 +12,7 @@ SIGNIFICANT USER-VISIBLE CHANGES
 
 BUG FIXES
 
+* Fixed backwards compatibility of map()
 * Clarified in the vignette the output `getMatchingSources()`
 
 # BridgeDbR 2.9.2
