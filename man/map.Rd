@@ -25,11 +25,11 @@ location <- getDatabase("Bacillus subtilis")
 mapper <- loadDatabase(location)
 map(mapper, "En", "BSn5_00025", "S")
 map(mapper, "En", "BSn5_00025")
-}
 location <- getDatabase("Homo sapiens")
 mapper <- loadDatabase(location)
 map(mapper, "En", "ENSG00000139618")
 map(mapper, compactIdentifier="uniprot:P51587")
+}
 }
 \author{
 Egon Willighagen

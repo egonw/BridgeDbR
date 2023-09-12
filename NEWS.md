@@ -1,3 +1,9 @@
+# BridgeDbR 2.11.2
+
+BUG FIXES
+
+* Fixed build/test process by including a long-running example into the dontrun{} environment
+
 # BridgeDbR 2.11.1
 
 NEW FEATURES
