@@ -3,6 +3,7 @@
 NEW FEATURES
 
 * Added a compact resource identifier example to the vignette
+* Added a second vignette explaining how `sec2pri` identifier mappings databases can be used
 
 BUG FIXES
 
