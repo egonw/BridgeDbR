@@ -1,3 +1,9 @@
+# BridgeDbR 2.19.1
+
+BUG FIXES
+
+* Handle Bioregistry.io ChEBI compact identifiers better
+
 # BridgeDbR 2.17.1
 
 * Updated to BridgeDb 3.0.28

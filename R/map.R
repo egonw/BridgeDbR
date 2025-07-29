@@ -3,6 +3,9 @@ map <- function(mapper, source, identifier, target = NULL, compactIdentifier = N
         source <- gsub(":.*", "", compactIdentifier)
         identifier <- gsub(".*:", "", compactIdentifier)
         datasource <- getDataSource(prefix = source)
+        if (source == "chebi" && !(startsWith(identifier, "CHEBI:"))) {
+            identifier = paste0("CHEBI:", identifier)
+        }
     } else {
         datasource <- getDataSource(code = source)
     }
