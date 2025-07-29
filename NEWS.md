@@ -1,5 +1,9 @@
 # BridgeDbR 2.19.1
 
+NEW FEATURES
+
+* Added a compact resource identifier example to the vignette
+
 BUG FIXES
 
 * Handle Bioregistry.io ChEBI compact identifiers better

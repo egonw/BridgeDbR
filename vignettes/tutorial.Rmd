@@ -144,7 +144,18 @@ mapper <- loadDatabase(location)
 map(mapper, "L", "196410", "X")
 ```
 
-Mind you, this returns more than one identifier, as BridgeDb is generally a one to many mapping database.
+## Using compact resource identifiers
+
+The `map()` function also has support for compact resource identifiers (CURIEs) as explained
+in the Bioregistry.io paper [@Hoyt2022]. The previous example would then be as follows,
+where `ncbigene` is the Bioregistry.io prefix matching the `L` data source:
+
+
+```{r, eval=FALSE}
+location <- getDatabase("Homo sapiens")
+mapper <- loadDatabase(location)
+map(mapper, compactIdentifier="ncbigene:196410", "X")
+```
 
 ## Mapping multiple identifiers
 
