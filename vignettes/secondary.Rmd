@@ -39,6 +39,12 @@ The [Bioconductor BridgeDbR package](https://doi.org/10.18129/B9.bioc.BridgeDbR)
 page describes how to install the package. After installation, the library can be loaded with the following command:
 
 ```{r, eval=FALSE}
+install.packages("BiocManager")
+BiocManager::install("BridgeDbR")
+install.packages(pkgs=c("rJava", "curl"))
+
+library(curl)
+library(rJava)
 library(BridgeDbR)
 ```
 
@@ -59,7 +65,7 @@ artifacts:
 ![](chebi_action_run_with_artifacts.png)
 
 Click the `chebi_procesed` artifact and save this locally as a `chebi_processed.zip`
-file. Unzip the file to get the `ChEBI_secID2priID.bridge` file.
+file. Unzip the file to get the `ChEBI_secID2priID.bridge` file in the current working directory.
 
 ## Loading the sec2pri database
 
