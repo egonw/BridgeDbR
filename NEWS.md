@@ -1,3 +1,10 @@
+# BridgeDbR 2.19.2
+
+BUG FIXES
+
+* Better package install instructions in the new `secondary` vignette
+
+
 # BridgeDbR 2.19.1
 
 NEW FEATURES

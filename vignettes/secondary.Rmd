@@ -33,7 +33,10 @@ by new identifiers, called primary identifiers.
 
 This vignette explains how to use `sec2pri` BridgeDb identifier mapping files
 to detect secondary identifiers, and, where possible, suggest the replacing
-primary identifier. We first load the library:
+primary identifier.
+
+The [Bioconductor BridgeDbR package](https://doi.org/10.18129/B9.bioc.BridgeDbR)
+page describes how to install the package. After installation, the library can be loaded with the following command:
 
 ```{r, eval=FALSE}
 library(BridgeDbR)
