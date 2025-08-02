@@ -48,6 +48,9 @@ library(rJava)
 library(BridgeDbR)
 ```
 
+*Note: if you have trouble with rJava (required package), please read the [general information](https://www.rforge.net/rJava/docs/index.html) or
+follow the instructions [here](https://github.com/hannarud/r-best-practices/wiki/Installing-RJava-(Ubuntu)) for Ubuntu.
+
 ## Downloading sec2pri databases
 
 The first thing to do is download a BridgeDb identifier mapping database. This
