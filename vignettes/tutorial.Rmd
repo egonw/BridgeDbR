@@ -9,7 +9,7 @@ output:
       in_header: bioschemas.html
   BiocStyle::pdf_document: default
 vignette: >
-  %\VignetteIndexEntry{Tutorial}
+  %\VignetteIndexEntry{1. Tutorial}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 bibliography: tutorial.bib

@@ -1,3 +1,9 @@
+# BridgeDbR 2.19.3
+
+BUG FIXES
+
+* Sorts the vignette to list the tutorial first
+
 # BridgeDbR 2.19.2
 
 BUG FIXES
